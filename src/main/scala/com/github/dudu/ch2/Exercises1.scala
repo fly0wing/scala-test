@@ -5,9 +5,10 @@ package com.github.dudu.ch2
   */
 object Exercises1 {
   def compute(num: Int): Int = {
-    if (num > 0) 1
-    else if (num < 0) -1
-    else 0
+//    if (num > 0) 1
+//    else if (num < 0) -1
+//    else 0
+    num.signum
   }
 
   def main(args: Array[String]): Unit = {

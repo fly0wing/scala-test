@@ -5,8 +5,8 @@ package com.github.dudu.ch2
   */
 object Exercises7 {
   def mutiStr(str: String): Long = {
-    var result=1
-//    str.map()
+    var result: Long = 1
+    str.foreach(result *= _)
     result
   }
 

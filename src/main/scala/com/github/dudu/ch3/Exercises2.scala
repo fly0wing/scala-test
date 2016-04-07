@@ -14,6 +14,8 @@ object Exercises2 {
       arr(i) = arr(i - 1)
       arr(i - 1) = tmp
     }
-    println(arr.toBuffer)
+    arr.toBuffer.foreach(print)
+    println
+    println(arr.mkString(","))
   }
 }

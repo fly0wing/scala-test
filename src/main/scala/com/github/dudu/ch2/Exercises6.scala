@@ -5,9 +5,9 @@ package com.github.dudu.ch2
   */
 object Exercises6 {
   def mutiStr(str: String): Long = {
-    var result=1
+    var result: Long = 1
     for (i <- str) {
-      result *=i
+      result *= i
     }
     result
   }

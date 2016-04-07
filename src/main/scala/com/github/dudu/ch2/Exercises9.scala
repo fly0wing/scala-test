@@ -4,17 +4,20 @@ package com.github.dudu.ch2
   * Created by zk on 2016/4/5.
   */
 object Exercises9 {
-  def mutiStr(str: String): Long = {
-    var result = 1
-    //    str.map()
-    if (str != "s") {
-      mutiStr("s")
-    } else{
-      0
-    }
+  def product(str: String): Long = {
+    //    if (str.length == 1) {
+    //      str.charAt(0)
+    //    } else {
+//          str.charAt(0).toLong * product(str.substring(1))
+    //    }
+    //
+    if (str.length == 1)
+      str.charAt(0).toLong
+    else
+      str.take(1).charAt(0).toLong * product(str.drop(1))
   }
 
   def main(args: Array[String]) {
-    println(mutiStr("Hello"))
+    println(product("Hello"))
   }
 }

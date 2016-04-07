@@ -5,8 +5,8 @@ package com.github.dudu.ch2
   */
 object Exercises3 {
   def main(args: Array[String]) {
-    var x={}
-//    var y
-//      x = y = 1
+    var x = {}
+    var y = 2
+    x = y = 1
   }
 }
